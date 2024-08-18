@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>form pages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#"><img src="amikom.png" height="50vh"></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="amikom.png" height="50px">  Amikom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="form.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="about.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="login-button">Login</a>
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!--heading-->
+    <div class="header">
+      <h1>new student admission of amikom university yogyakarta 2024/2025</h1>
+      <h2>register your Admissions account</h2>
+    </div>
+
+    <!--form-->
+    <section class="container">
+      <header>NEW STUDENT REGISTRATION FORM</header>
+      
+      <form action="#" class="form">
+        <div class="first-form">
+          <div class="details personal">
+            <span class="title">Personal Details</span>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label>Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your full name" aria-label="Full name">
+              </div>
+              <div class="col-md-6">
+                <label>NIK</label>
+                <input type="number" class="form-control" placeholder="Enter your NIK number" aria-label="NIK number">
+              </div>
+              <div class="col-md-5">
+                <label for="inputPoB" class="form-label">Place of birth</label>
+                <input type="text" class="form-control" id="inputPoB">
+              </div>
+              <div class="col-md-5">
+                <label for="inputDoB" class="form-label">Date of birth</label>
+                <input type="date" class="form-control" id="inputDoB">
+                
+              </div>
+              <div class="col-md-2">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Female</label>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <label for="inputParent" class="form-label">Birth mother's name</label>
+                <input type="text" class="form-control" id="inputParent">
+              </div>
+              <div class="col-md-5">
+                <label for="inputState" class="form-label">country of origin</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>America</option>
+                  <option>Brazil</option>
+                  <option>China</option>
+                  <option>Greenland</option>
+                  <option>Indonesia</option>
+                  <option>India</option>
+                  <option>Japan</option>
+                  <option>Kanada</option>
+                  <option>Meksiko</option>
+                  <option>Rusia</option>
+                  <option>Thailand</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputReligion" class="form-label">Religion</label>
+                <select id="inputReligion" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>Buddha</option>
+                  <option>Catholic</option>
+                  <option>Christian</option>
+                  <option>Confucius</option>
+                  <option>Hindu</option>
+                  <option>Islam</option>
+                  <option>Protestant</option>
+                  <option>Jewish</option>
+                  <option>Satanic</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email" aria-label="email">
+              </div>
+              <div class="col-md-6">
+                <label>WhatsApp Number</label>
+                <input type="number" class="form-control" placeholder="Enter your WhatsApp number" aria-label="WhatsApp number">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="second-form">
+            <div class="details adress">
+              <span class="title">Adress Details</span>
+              
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label>Adress</label>
+                  <input type="text" class="form-control" placeholder="Enter your Adress" aria-label="adress">
+                </div>
+                <div class="col-md-6">
+                  <label>Sub District</label>
+                  <input type="text" class="form-control" placeholder="Enter your Sub-district" aria-label="sub-district">
+                </div>              
+                <div class="col-md-6">
+                  <label>District</label>
+                  <input type="text" class="form-control" placeholder="Enter your District" aria-label="district">
+                </div>
+                <div class="col-md-6">
+                  <label>province</label>
+                  <input type="text" class="form-control" placeholder="Enter your Province" aria-label="province">
+                </div>              
+                <div class="col-md-3">
+                  <label>Zip code</label>
+                  <input type="number" class="form-control" placeholder="Enter your Zip code" aria-label="Zip code">
+                </div> 
+              </div>       
+            </div>
+        </div> 
+
+        <div class="third-form">
+          <div class="details education">
+            <span class="title">Education Data</span>
+
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label for="inputEducation" class="form-label">Latest Education</label>
+                <select id="inputEducation" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>SMA-IPA</option>
+                  <option>SMA-IPS</option>
+                  <option>SMA-Bahasa</option>
+                  <option>SMK-DKV</option>
+                  <option>SMK-Akuntansi</option>
+                  <option>SMK-Multimedia</option>
+                  <option>SMK-Teknik Informatika</option>
+                  <option>SMK-Teknik Mesin</option>
+                  <option>SMK-Teknik Elektro</option>
+                  <option>SMk-Teknik Sipil</option>
+                  <option>SMK-Teknik Kimia</option>
+                  <option>SMK-Teknik Komputer Jaringan</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Name of School</label>
+                <input type="text" class="form-control" placeholder="Enter your School Name" aria-label="school name">
+              </div>              
+              <div class="col-md-4">
+                <label>Average Report Card Score</label>
+                <input type="number" class="form-control" placeholder="Enter your Average Score" aria-label="average report">
+              </div>
+            </div>            
+          </div>
+        </div> 
+        
+        <div class="fourth-form">
+          <div class="details study programs">
+            <span class="title">Study Program Selection</span>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="inputStudy" class="form-label">First Study Program</label>
+                <select id="inputStudy" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>D3-Teknik Informatika</option>
+                  <option>D3-Manajemen Informatika</option>
+                  <option>S1-Ekonomi</option>
+                  <option>S1-Kewirausahaan</option>
+                  <option>S1-Akuntansi</option>
+                  <option>S1-Ilmu Pemerintahan</option>
+                  <option>S1-Hubungan Internasional</option>
+                  <option>S1-Ilmu Komunikasi</option>
+                  <option>S1-Informatika</option>
+                  <option>S1-Sistem Informasi</option>
+                  <option>S1-Bachelor Information Technology</option>
+                  <option>S1-Bachelor Informatics</option>
+                  <option>S1-Bachelor Information System</option>
+                  <option>S1-Teknologi Informasi</option>
+                  <option>S1-Teknik Komputer</option>
+                  <option>S1-Arsitektur</option>
+                  <option>S1-Geografi</option>
+                  <option>S1-Perencanaan Wilayah dan Kota</option>
+                  <option>S2-Teknik Informatika</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="inputStudy" class="form-label">Second Study Program</label>
+                <select id="inputStudy" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>D3-Teknik Informatika</option>
+                  <option>D3-Manajemen Informatika</option>
+                  <option>S1-Ekonomi</option>
+                  <option>S1-Kewirausahaan</option>
+                  <option>S1-Akuntansi</option>
+                  <option>S1-Ilmu Pemerintahan</option>
+                  <option>S1-Hubungan Internasional</option>
+                  <option>S1-Ilmu Komunikasi</option>
+                  <option>S1-Informatika</option>
+                  <option>S1-Sistem Informasi</option>
+                  <option>S1-Bachelor Information Technology</option>
+                  <option>S1-Bachelor Informatics</option>
+                  <option>S1-Bachelor Information System</option>
+                  <option>S1-Teknologi Informasi</option>
+                  <option>S1-Teknik Komputer</option>
+                  <option>S1-Arsitektur</option>
+                  <option>S1-Geografi</option>
+                  <option>S1-Perencanaan Wilayah dan Kota</option>
+                  <option>S2-Teknik Informatika</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    I agree that if the data entered is incorrect, the registration will fail.
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <button type="submit" class="btn" onclick="openPopup()">Register</button>
+        <div class="popup" id="popup">
+          <img src="amikom.png">
+          <h2>Thank You!</h2>
+          <p>congratulations on successfully enrolling at amikom university yogyakarta.<br> please wait for the acceptance results!</p>
+          <button type="button" onclick="closePopup()">Ok</button>
+        </div>
+      </form>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <div class="footer-content">
+          <img src="amikom.png">
+          <h4>AMIKOM UNIVERSITY YOGYAKARTA</h4>
+          <p>Jl. Padjajaran, North Ring Road, Condongcatur, Depok District, Sleman Regency, Yogyakarta Special Region 55283</p>
+          <br>
+          <p>Email : Yayasan@amikom.ac.id</p>
+          <p>Email     : amikom@amikom.ac.id</p>
+          <p>Telp      : (0274) 884201-207</p>
+          <p>Fax       : (0274) 884208</p>
+          
+          <div class="footer-inner">
+            <h4>INTERNATIONAL OFFICE</h4>
+            <p>Email : io@amikom.ac.id</p>
+            <p>Telp  : +62 274884 201 Ext.612</p>
+            <p>Fax   : +62 274884 208</p>
+          </div>
+        </div>
+        <div class="footer-content">
+          <h4>Menu</h4>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Register</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </div>
+        <div class="footer-content">
+          <h4>Link</h4>
+          <li><a href="#">Academic</a></li>
+          <li><a href="#">International</a></li>
+          <li><a href="#">Innovation Center</a></li>
+          <li><a href="#">More..</a></li>
+        </div>
+        <div class="footer-content">
+          <p>Copyright &copy; 2001 - 2024</p>
+          <p>AMIKOM UNIVERSITY YOGYAKARTA</p>
+          <P>All Right Reserved</P>
+        </div>
+    </section>
+    
+
+<script>
+  let popup = document.getElementById("popup");
+
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
